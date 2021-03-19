@@ -8,6 +8,7 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from flask_login import LoginManager
 from flask_mail import Mail
+from flask_bootstrap import Bootstrap
 
 
 # app - instance of Flask class
@@ -17,6 +18,9 @@ db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 login = LoginManager(app)
 mail = Mail(app)
+bootstrap = Bootstrap(app)
+
+
 login.login_view = 'login'
 
 if not app.debug:
