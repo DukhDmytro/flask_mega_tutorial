@@ -1,0 +1,225 @@
+# Ukrainian translations for PROJECT.
+# Copyright (C) 2021 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2021-03-20 12:21+0200\n"
+"PO-Revision-Date: 2021-03-20 11:24+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: uk\n"
+"Language-Team: uk <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.0\n"
+
+#: app/__init__.py:29
+msgid "Please log in to access this page."
+msgstr "Для доступу до цієї сторінки потрібно ввійти"
+
+#: app/email.py:24
+msgid "[Microblog] Reset Your Password"
+msgstr "[Мікроблог] Відновити палоль"
+
+#: app/fomrs.py:10 app/fomrs.py:17 app/fomrs.py:35
+msgid "Username"
+msgstr "Ім'я користувача"
+
+#: app/fomrs.py:11 app/fomrs.py:19 app/fomrs.py:65
+msgid "Password"
+msgstr "Пароль"
+
+#: app/fomrs.py:12
+msgid "Remember me"
+msgstr "Запам'ятати мене"
+
+#: app/fomrs.py:13
+msgid "Sign in"
+msgstr "Увійти"
+
+#: app/fomrs.py:18 app/fomrs.py:60
+msgid "Email"
+msgstr "Ел. пошта"
+
+#: app/fomrs.py:21 app/fomrs.py:67
+msgid "Repeat password"
+msgstr "Повторити палоль"
+
+#: app/fomrs.py:27 app/fomrs.py:47
+msgid "Please use a different username"
+msgstr "Будь ласка використайте інше ім'я користувача"
+
+#: app/fomrs.py:31
+msgid "Please user a different email"
+msgstr "Будь ласка використайте іншиу Ел. пошту"
+
+#: app/fomrs.py:36
+msgid "About me"
+msgstr "Про мене"
+
+#: app/fomrs.py:37
+msgid "Save"
+msgstr "Зберегти"
+
+#: app/fomrs.py:51 app/fomrs.py:56 app/fomrs.py:61
+msgid "Submit"
+msgstr "Підтвердити"
+
+#: app/fomrs.py:55
+msgid "Post text"
+msgstr "Текс посту"
+
+#: app/fomrs.py:69 app/routes.py:93 app/templates/register.html:5
+msgid "Register"
+msgstr "Зареєструватись"
+
+#: app/routes.py:40
+msgid "Your post is now live!"
+msgstr "Ваш пост опубліковано!"
+
+#: app/routes.py:64
+msgid "Invalid credentials"
+msgstr "Неправильниі пароль або ім'я користувача"
+
+#: app/routes.py:72 app/templates/login.html:5
+msgid "Sign In"
+msgstr "Увійти"
+
+#: app/routes.py:91
+msgid "Congratulations, you are now a registered user!"
+msgstr "Вітаємо, Ви зареєструвались"
+
+#: app/routes.py:128
+msgid "Edit profile"
+msgstr "Редагувати профіль"
+
+#: app/routes.py:138 app/routes.py:158
+#, python-format
+msgid "User %(username)s not found."
+msgstr "Користувача %(username)s не існує"
+
+#: app/routes.py:141
+msgid "You cannot follow yourself!"
+msgstr "Неможливо підписатись на себе"
+
+#: app/routes.py:145
+#, python-format
+msgid "You are following %(username)s!"
+msgstr "Ви підписались на %(username)s!"
+
+#: app/routes.py:161
+msgid "You cannot unfollow yourself!"
+msgstr "Не помжна підписатись на себе"
+
+#: app/routes.py:165
+msgid "You are not following"
+msgstr "Ви більше не підписані"
+
+#: app/routes.py:180
+msgid "All posts"
+msgstr "Всі пости"
+
+#: app/routes.py:194
+msgid "Check your email for the instructions to reset your password"
+msgstr "Перевірте свою пошту для подальших інструкцій для відновлення паролю"
+
+#: app/routes.py:197
+msgid "Password reset"
+msgstr "Відновити пароль"
+
+#: app/routes.py:213
+msgid "Your password has been reset."
+msgstr "Ваш пароль відновлено"
+
+#: app/templates/404.html:4
+msgid "File Not Found"
+msgstr "Файл не знайдено"
+
+#: app/templates/404.html:5 app/templates/500.html:6
+msgid "Back"
+msgstr "Назад"
+
+#: app/templates/500.html:4
+msgid "An unexpected error has occurred"
+msgstr "Стальась помилка"
+
+#: app/templates/500.html:5
+msgid "The administrator has been notified. Sorry for the inconvenience!"
+msgstr "Адміністартор уже повідомлений. Вибачте за незручності"
+
+#: app/templates/_post.html:14
+#, python-format
+msgid "%(username)s said %(when)s"
+msgstr "%(username)s сказав %(when)s"
+
+#: app/templates/edit_profile.html:4
+#, fuzzy
+msgid "Edit Profile"
+msgstr "Редагувати профіль"
+
+#: app/templates/index.html:5
+#, fuzzy, python-format
+msgid "Dear %(username)s!"
+msgstr "Шановний %(username)s!"
+
+#: app/templates/index.html:20 app/templates/user.html:39
+#, fuzzy
+msgid "Newer posts"
+msgstr "Всі пости"
+
+#: app/templates/index.html:25 app/templates/user.html:44
+#, fuzzy
+msgid "Older posts"
+msgstr "Всі пости"
+
+#: app/templates/login.html:6
+msgid "New User?"
+msgstr "Новий користувач?"
+
+#: app/templates/login.html:6
+msgid "Click to Register!"
+msgstr "Зареєструватись"
+
+#: app/templates/login.html:12
+#, fuzzy
+msgid "Forgot Your Password?"
+msgstr "Забули пароль?"
+
+#: app/templates/login.html:13
+msgid "Click to Reset It"
+msgstr "Натисніть для відновлення паролю"
+
+#: app/templates/reset_password.html:4
+#, fuzzy
+msgid "Reset Your Password"
+msgstr "Повторити палоль"
+
+#: app/templates/reset_password_request.html:4
+#, fuzzy
+msgid "Reset Password"
+msgstr "Повторити палоль"
+
+#: app/templates/user.html:7
+#, fuzzy, python-format
+msgid "User: %(username)s!"
+msgstr "Користувач %(username)s"
+
+#: app/templates/user.html:12
+#, fuzzy
+msgid "Edit your profile"
+msgstr "Редагувати профіль"
+
+#: app/templates/user.html:17
+msgid "Follow"
+msgstr "Підписатись"
+
+#: app/templates/user.html:24
+msgid "Unfollow"
+msgstr "Відписатись"
+
