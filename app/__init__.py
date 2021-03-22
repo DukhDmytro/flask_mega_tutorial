@@ -11,7 +11,7 @@ from flask_mail import Mail
 from flask_bootstrap import Bootstrap
 from flask_moment import Moment
 from flask_babel import Babel, lazy_gettext as _l
-
+from elasticsearch import Elasticsearch
 
 db = SQLAlchemy()
 migrate = Migrate()
@@ -36,6 +36,11 @@ def create_app(class_config=Config):
     moment.init_app(app)
     babel.init_app(app)
 
+    if app.config['ELASTICSEARCH_URL']:
+        app.elasticsearch = Elasticsearch([app.config['ELASTICSEARCH_URL']])
+    else:
+        app.elasticsearch = None
+
     from app.errors import bp as error_bp
     from app.auth import bp as auth_bp
     from app.main import bp as main_bp
@@ -43,8 +48,6 @@ def create_app(class_config=Config):
     app.register_blueprint(error_bp)
     app.register_blueprint(auth_bp, url_prefix='/auth')
     app.register_blueprint(main_bp)
-
-
 
     if not app.debug and not app.testing:
         if app.config['MAIL_SERVER']:
